@@ -11,6 +11,6 @@ Hari ini saya menghadiri pertemuan dengan Pak Rahmat beserta tim untuk membicara
 	+ Menyisipkan gambar-gambar (e.g. *meme*) dalam *slide*, dengan catatan gambar merupakan *original content* (bukan karya yang memiliki *copyright*).
 
 Selain menghadiri pertemuan, hari ini saya juga melakukan beberapa hal lainnya yaitu:
-- Menghilangkan NPM yang sebelumnya ditampilkan dalam dokumen LaTeX.
+- Menghilangkan NPM kemudian mengganti *full name* yang sebelumnya ditampilkan dalam dokumen LaTeX menjadi inisial.
 - Menghapus *file* LaTeX yang tidak diperlukan.
 - Membuat *log* harian.
