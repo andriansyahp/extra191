@@ -15,8 +15,8 @@ Dalam rangka mempersiapkan pertemuan esok hari dengan tim, hari ini saya mencoba
 
 	dan berbagai pertanyaan-pertanyaan lainnya. Dengan pertanyaan yang tepat kita tidak hanya dapat mengetahui apa kesalahan-kesalahan yang umum dilakukan peserta kuliah sebelumnya, namun juga dapat mengetahui kiat-kiat sukses yang dapat dilakukan peserta kuliah.
 - Sebagai kelanjutan dari pertemuan sebelumnya mengenai *Jekyll template* baru yang dapat digunakan di *Github page* [os.vlsm.org](os.vlsm.org), saya mencoba mencari beberapa *template* yang menurut saya menarik dan sejauh ini telah menemukan dua *template* yaitu:
-	+ [Minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/):[Github](https://github.com/mmistakes/minimal-mistakes).
-	+ [Hydejack](https://hydejack.com/):[Github](https://github.com/qwtel/hydejack).  
+	+ [Minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/) ([Github](https://github.com/mmistakes/minimal-mistakes)).
+	+ [Hydejack](https://hydejack.com/) ([Github](https://github.com/qwtel/hydejack)).  
 
 	Sejauh ini saya hanya baru mencari *template* yang kira-kira cocok, namun belum sampai pada tahap implementasi pada *Github page* saya dikarenakan keterbatasan waktu.  
 
