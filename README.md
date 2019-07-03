@@ -1,6 +1,6 @@
 # EXTRA191 Operating Systems
 
-This is a Github Page for **Extra** project in **_Operating Systems_**, 2019.
+This is a Github Page for `Extra` project in **_Operating Systems_**, 2019.
 
 ## *OPERATING SYSTEMS STARTER PACK*
 
@@ -19,15 +19,15 @@ What is in this starter pack:
 
 This repository can also be accessed in the form of Github page, via [https://andriansyahp.github.io/extra191](https://andriansyahp.github.io/extra191).  
 
-The Github page above utilizes the theme from [StartBootstrap](https://startbootstrap.com/guides/how-to-create-a-website-with-github-pages/), with [Stylish Portofolio](https://startbootstrap.com/themes/stylish-portfolio) theme being chosen with some modification and personalization as an addition to the theme.  
+The Github page above utilizes the theme from [StartBootstrap](https://startbootstrap.com/guides/how-to-create-a-website-with-github-pages/), with [Stylish Portfolio](https://startbootstrap.com/themes/stylish-portfolio) theme being chosen with some modification and personalization as an addition to the theme.  
 
 The pictures being used in this project are taken from [Unsplash](https://unsplash.com), from the user [Greg Rakozy](https://unsplash.com/@grakozy) with following details:
-- ![alt text](https://unsplash.com/photos/0Kq8EXvRBq0 "Desert, mountain, mesa and soil")
-- ![alt text](https://unsplash.com/photos/TTnfO3URifc "Strolling by the wintry woods")
-- ![alt text](https://unsplash.com/photos/UFuG48gmUG8 "Water, ocean, nature and promontory")
-- ![alt text](https://unsplash.com/photos/-IBLiXjH82Q "Outdoors, mountain, nature and fir")
-- ![alt text](https://unsplash.com/photos/sXAJDI-6st0 "Night, stars, night sky and universe")
-- ![alt text](https://unsplash.com/photos/0LU4vO5iFpM "Night, sky, galaxy and milky way")
+- ![alt text](https://images.unsplash.com/photo-1491438439834-3966af3a2017?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80 "Desert, mountain, mesa and soil")
+- ![alt text](https://images.unsplash.com/photo-1486945007940-bebc06d5f289?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80 "Strolling by the wintry woods")
+- ![alt text](https://images.unsplash.com/photo-1451444858145-fe37f5bd0c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80 "Water, ocean, nature and promontory")
+- ![alt text](https://images.unsplash.com/photo-1451789615881-b96de0253489?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80 "Outdoors, mountain, nature and fir")
+- ![alt text](https://images.unsplash.com/photo-1462651369841-9be325b94ade?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80 "Night, stars, night sky and universe")
+- ![alt text](https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=966&q=80 "Night, sky, galaxy and milky way")
 
 
 
