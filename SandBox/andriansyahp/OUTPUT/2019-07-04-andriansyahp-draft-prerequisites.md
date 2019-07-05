@@ -13,7 +13,7 @@ As stated in the website, PuTTY is an SSH  and telnet client with terminal emula
 
 To download PuTTY, you can head to this link for the latest release: [https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), and look at the 'Package files' part of the page as shown in the blue box in the image below.  
 
-!['Package files' part of the page](url[TODO]).  
+!['Package files' part of the page](https://github.com/andriansyahp/extra191/blob/master/img/pre-putty-page.png).  
 
 Do not forget to download it correspondingly to your running Windows (32-bit or 64-bit).  
 
