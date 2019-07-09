@@ -8,7 +8,7 @@ What is in this starter pack:
 - Lab demonstration (tutorial), via `badak.cs.ui.ac.id`
 	+ Preparation
 		- PuTTy (Windows) 
-		- Terminal (Linux)
+		- Terminal (Linux/MacOS)
 	+ How to access `badak.cs.ui.ac.id`
 		- Tunneling to `badak.cs.ui.ac.id`, via `kawung.cs.ui.ac.id`
 	+ How to copy files in `badak.cs.ui.ac.id` to *Home* directory
@@ -17,7 +17,7 @@ What is in this starter pack:
 	+ What makes memo important?
 	+ Guides to make a "*useful*" memo
 
-This repository can also be accessed in the form of Github page, via [https://andriansyahp.github.io/extra191](https://andriansyahp.github.io/extra191).  
+This repository is also available in the form of Github page, via [https://andriansyahp.github.io/extra191](https://andriansyahp.github.io/extra191).  
 
 The Github page above utilizes the theme from [StartBootstrap](https://startbootstrap.com/guides/how-to-create-a-website-with-github-pages/), with [Stylish Portfolio](https://startbootstrap.com/themes/stylish-portfolio) theme being chosen with some modification and personalization as an addition to the theme.  
 

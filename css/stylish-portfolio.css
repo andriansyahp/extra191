@@ -402,3 +402,7 @@ a:hover, a:focus, a:active {
 .text-secondary {
   color: #ecb807 !important;
 }
+
+.container {
+  background-color: rgba(36, 38, 49, 0.6)
+}
