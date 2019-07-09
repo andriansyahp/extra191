@@ -1,5 +1,5 @@
 # LOG HARIAN EXTRA *OPERATING SYSTEMS*
-## Selasa, 9 Juni 2019
+## Selasa, 9 Juli 2019
 
 Hari ini saya menghadiri pertemuan dengan Pak Rahmat beserta tim untuk melaporkan *progress* serta rencana penyelesaian proyek. Hasil pertemuan hari ini antara lain:
 - Konten untuk *prototype* secara umum telah selesai dibuat.
