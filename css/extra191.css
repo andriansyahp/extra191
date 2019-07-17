@@ -24,7 +24,7 @@ body {
 }
 
 .content-section-heading h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .content-section-heading h3 {
@@ -116,7 +116,7 @@ h6 {
 }
 
 /* Side Menu */
-#sidebar-wrapper {
+/* #sidebar-wrapper {
   position: fixed;
   z-index: 2;
   right: 0;
@@ -202,7 +202,7 @@ h6 {
 
 .menu-toggle:hover {
   background: #343a40;
-}
+} */
 
 .memo-icon {
   background-color: #fff;
@@ -410,4 +410,56 @@ a:hover, a:focus, a:active {
 .bg-alternative {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(51,4,55,1) 24%, rgba(121,9,83,1) 44%, rgba(121,9,83,1) 61%, rgba(49,4,55,1) 81%, rgba(2,0,36,1) 94%);
+}
+
+/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+/* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
+#sidebar .sidebar-header strong {
+    display: none;
+}
+#sidebar.active .sidebar-header h3 {
+    display: none;
+}
+#sidebar.active .sidebar-header strong {
+    display: block;
+}
+
+#sidebar ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+/* Same dropdown links padding*/
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+/* Changing the arrow position to bottom center position, 
+   translateX(50%) works with right: 50% 
+   to accurately  center the arrow */
+#sidebar.active .dropdown-toggle::after {
+    top: auto;
+    bottom: 10px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
 }
