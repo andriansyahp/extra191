@@ -16,7 +16,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top-50
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -46,7 +46,7 @@ $('.collapse').on('shown.bs.collapse', function (e) {
   if ($(this).data('noscroll')!=1){
 	var $card = $(this).closest('.card');
 	$('html,body').animate({
-		scrollTop: $card.offset().top
+		scrollTop: $card.offset().top-50
 	}, 500);
   }
   // reset noscroll data
