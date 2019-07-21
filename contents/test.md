@@ -2,7 +2,7 @@
 title: "TEST"
 description: "Test"
 layout: default
-permalink: /test/
+# permalink: /test/
 ---
 
 # LOG HARIAN EXTRA *OPERATING SYSTEMS*
