@@ -1,3 +1,10 @@
+---
+title: "TEST"
+description: "Test"
+layout: default
+# permalink: /prerequisites/
+---
+
 # LOG HARIAN EXTRA *OPERATING SYSTEMS*
 ## Kamis, 11 Juli 2019
 
