@@ -1,5 +1,6 @@
 title: "EXTRA Operating Systems 2019-1"
 description: "A project to help students taking Operating Systems class."
+baseurl: "/extra191"
 
 # theme: jekyll-theme-cayman
 version: "V007-20190718 andriansyahp"
