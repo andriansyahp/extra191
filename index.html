@@ -9,13 +9,13 @@ layout: default
     <div id="slides" class="mt-3">
         <div id="carouselContent" class="carousel slide" data-interval="2500" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active text-center p-8">
+                <div class="carousel-item active text-center padding-lg">
                     <h5 class="text-primary text-center">EXTRA191</h5>
                     <h6 class="text-center text-secondary">Welcome.</h6>
                 </div>
                 {% for page in site.pages %}
                     {% if page.categories contains 'content' %}
-                        <div class="carousel-item text-center p-8">
+                        <div class="carousel-item text-center padding-lg">
                             <h5 class="text-primary text-center">{{page.title}}</h5>
                             <h6 class="text-center text-secondary">{{page.description}}</h6>
                             <a class="btn btn-outline-primary btn-sm" href = "{{ page.path }}" role="button">Lihat</a>
@@ -50,7 +50,7 @@ layout: default
         var newColor22 = populate2('#');
         var angle2 = Math.round( Math.random() * 360 );  
         var gradient2 = "linear-gradient(" + angle2 + "deg, " + newColor12 + ", " + newColor22 + ")";  
-        $('#slides').css({'background': '' + gradient2});
+        $('#slides').css({'background-color': '' + gradient2});
     });
 </script>
 
