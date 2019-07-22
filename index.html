@@ -4,7 +4,7 @@ description: "A starter pack to help the student taking Operating Systems class.
 layout: default
 ---
 
-<!-- <h1 class="mb-1 text-white text-center">Test. Hello World!</h1> -->
+<h1 class="mb-1 text-white text-center">Apa yang ada di <em>Website</em> ini <em>?</em></h1>
 <!-- {% for page in site.pages %}
   {% if page.categories contains 'content' %}
     <div class="item">
@@ -42,17 +42,17 @@ layout: default
     </a>
 </div> -->
 
-<div id="carouselContent" class="carousel slide" data-interval="false" data-ride="carousel">
+<div id="carouselContent" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active text-center">
-            <h3>EXTRA191</h3>
-            <p>Welcome.</p>
+        <div class="carousel-item active text-center p-4 masthead">
+            <h2 class="mb-1 text-white text-center">EXTRA191</h2>
+            <h3 class="text-center">Welcome.</h3>
         </div>
         {% for page in site.pages %}
             {% if page.categories contains 'content' %}
-                <div class="carousel-item text-center p-4">
-                    <h3>{{page.title}}</h3>
-                    <p>{{page.description}}</p>
+                <div class="carousel-item text-center p-4 masthead">
+                    <h2 class="mb-1 text-white text-center">{{page.title}}</h2>
+                    <h3 class="text-center">{{page.description}}</h3>
                 </div>
             {% endif %}
         {% endfor %}
