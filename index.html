@@ -3,67 +3,51 @@ title: "EXTRA191"
 description: "A starter pack to help the student taking Operating Systems class."
 layout: default
 ---
+<div class="container text-center rounded-lg shadow-lg p-4">
+    <h1 class="mb-1 text-white text-center">Apa yang ada di <em>Website</em> ini <em>?</em></h1>
 
-<h1 class="mb-1 text-white text-center">Apa yang ada di <em>Website</em> ini <em>?</em></h1>
-<!-- {% for page in site.pages %}
-  {% if page.categories contains 'content' %}
-    <div class="item">
-      <h3>{{page.title}}</h3>
-      <p>{{page.description}}</p>  
-    </div>
-  {% endif %}
-{% endfor %} -->
-<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="carousel-caption">
-                <h3>EXTRA191</h3>
-                <p>Welcome.</p>
+    <div id="carouselContent" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active text-center p-4 masthead">
+                <h2 class="mb-1 text-white text-center">EXTRA191</h2>
+                <h3 class="text-center">Welcome.</h3>
             </div>
-        </div>
-        {% for page in site.pages %}
-            {% if page.categories contains 'content' %}
-                <div class="carousel-item">
-                    <div class="carousel-caption">
-                        <h3>{{page.title}}</h3>
-                        <p>{{page.description}}</p>
+            {% for page in site.pages %}
+                {% if page.categories contains 'content' %}
+                    <div class="carousel-item text-center p-4 masthead">
+                        <h2 class="mb-1 text-white text-center">{{page.title}}</h2>
+                        <h3 class="text-center">{{page.description}}</h3>
                     </div>
-                </div>
-            {% endif %}
-        {% endfor %}
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div> -->
-
-<div id="carouselContent" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active text-center p-4 masthead">
-            <h2 class="mb-1 text-white text-center">EXTRA191</h2>
-            <h3 class="text-center">Welcome.</h3>
+                {% endif %}
+            {% endfor %}
         </div>
-        {% for page in site.pages %}
-            {% if page.categories contains 'content' %}
-                <div class="carousel-item text-center p-4 masthead">
-                    <h2 class="mb-1 text-white text-center">{{page.title}}</h2>
-                    <h3 class="text-center">{{page.description}}</h3>
-                </div>
-            {% endif %}
-        {% endfor %}
+        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
 </div>
+
+<script>
+    $(document).ready(function(){
+    var hexValues = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e"];  
+    function populate(a) {
+        for ( var i = 0; i < 6; i++ ) {
+        var x = Math.round( Math.random() * 14 );
+        var y = hexValues[x];
+        a += y;
+        }
+        return a;
+    }  
+    var newColor1 = populate('#');
+    var newColor2 = populate('#');
+    var angle = Math.round( Math.random() * 360 );  
+    var gradient = "linear-gradient(" + angle + "deg, " + newColor1 + ", " + newColor2 + ")";  
+    $('.carousel-item').css({'background': '' + gradient});
+    });
+</script>
 
