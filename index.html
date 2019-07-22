@@ -6,30 +6,33 @@ layout: default
 <div class="container text-center rounded-lg shadow-lg p-4">
     <h1 class="mb-1 text-white text-center">Apa yang ada di <em>Website</em> ini <em>?</em></h1>
 
-    <div id="carouselContent" class="carousel slide" data-interval="2500" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active text-center p-6">
-                <h3 class="mb-1 text-primary text-center">EXTRA191</h3>
-                <h4 class="text-center text-secondary">Welcome.</h4>
+    <div id="slides" class="mt-3">
+        <div id="carouselContent" class="carousel slide" data-interval="2500" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active text-center p-8">
+                    <h5 class="text-primary text-center">EXTRA191</h5>
+                    <h6 class="text-center text-secondary">Welcome.</h6>
+                </div>
+                {% for page in site.pages %}
+                    {% if page.categories contains 'content' %}
+                        <div class="carousel-item text-center p-8">
+                            <h5 class="text-primary text-center">{{page.title}}</h5>
+                            <h6 class="text-center text-secondary">{{page.description}}</h6>
+                            <button class="btn btn-outline-primary btn-sm">Lihat</button>
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
-            {% for page in site.pages %}
-                {% if page.categories contains 'content' %}
-                    <div class="carousel-item text-center p-6">
-                        <h3 class="mb-1 text-primary text-center">{{page.title}}</h3>
-                        <h4 class="text-center text-secondary">{{page.description}}</h4>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+    </div>        
 </div>
 
 <script>
@@ -47,7 +50,7 @@ layout: default
         var newColor22 = populate2('#');
         var angle2 = Math.round( Math.random() * 360 );  
         var gradient2 = "linear-gradient(" + angle2 + "deg, " + newColor12 + ", " + newColor22 + ")";  
-        $('.carousel').css({'background': '' + gradient2});
+        $('#slides').css({'background': '' + gradient2});
     });
 </script>
 
