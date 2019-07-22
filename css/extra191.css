@@ -421,3 +421,7 @@ a:hover, a:focus, a:active {
   float: right;
   padding-right: 8px;
 }
+.carousel-caption{
+  color: #fff;
+  top: 50%;
+}
