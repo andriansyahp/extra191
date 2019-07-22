@@ -1,6 +1,6 @@
 ---
 title: "EXTRA191"
-description: "A starter pack to help the student taking Operating Systems class."
+description: "Petunjuk pemula untuk mahasiswa peserta kuliah Sistem Operasi."
 layout: default
 ---
 <div class="container text-center rounded-lg shadow-lg p-4">
@@ -11,7 +11,7 @@ layout: default
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active text-center p-5">
                     <h5 class="text-primary text-center">EXTRA191</h5>
-                    <h6 class="text-center text-secondary">Welcome.</h6>
+                    <h6 class="text-center text-secondary">Halo <em>!</em></h6>
                 </div>
                 {% for page in site.pages %}
                     {% if page.categories contains 'content' %}
@@ -35,22 +35,4 @@ layout: default
     </div>        
 </div>
 
-<script>
-    $(document).ready(function(){
-        var hexs = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e"];  
-        function populate2(a) {
-            for ( var i = 0; i < 6; i++ ) {
-            var x = Math.round( Math.random() * 14 );
-            var y = hexs[x];
-            a += y;
-            }
-            return a;
-        }  
-        var newColor12 = populate2('#');
-        var newColor22 = populate2('#');
-        var angle2 = Math.round( Math.random() * 360 );  
-        var gradient2 = "linear-gradient(" + angle2 + "deg, " + newColor12 + ", " + newColor22 + ")";  
-        $('#slides').css({'background-color': '' + gradient2});
-    });
-</script>
 
