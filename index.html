@@ -8,15 +8,15 @@ layout: default
 
     <div id="carouselContent" class="carousel slide" data-interval="2500" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active text-center p-4">
-                <h2 class="mb-1 text-primary text-center">EXTRA191</h2>
-                <h3 class="text-center text-secondary">Welcome.</h3>
+            <div class="carousel-item active text-center p-6">
+                <h3 class="mb-1 text-primary text-center">EXTRA191</h3>
+                <h4 class="text-center text-secondary">Welcome.</h4>
             </div>
             {% for page in site.pages %}
                 {% if page.categories contains 'content' %}
-                    <div class="carousel-item text-center p-4">
-                        <h2 class="mb-1 text-primary text-center">{{page.title}}</h2>
-                        <h3 class="text-center text-secondary">{{page.description}}</h3>
+                    <div class="carousel-item text-center p-6">
+                        <h3 class="mb-1 text-primary text-center">{{page.title}}</h3>
+                        <h4 class="text-center text-secondary">{{page.description}}</h4>
                     </div>
                 {% endif %}
             {% endfor %}
@@ -34,20 +34,20 @@ layout: default
 
 <script>
     $(document).ready(function(){
-    var hexValues = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e"];  
-    function populate(a) {
-        for ( var i = 0; i < 6; i++ ) {
-        var x = Math.round( Math.random() * 14 );
-        var y = hexValues[x];
-        a += y;
-        }
-        return a;
-    }  
-    var newColor1 = populate('#');
-    var newColor2 = populate('#');
-    var angle = Math.round( Math.random() * 360 );  
-    var gradient = "linear-gradient(" + angle + "deg, " + newColor1 + ", " + newColor2 + ")";  
-    $('.carousel-inner').css({'background': '' + gradient});
+        var hexs = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e"];  
+        function populate2(a) {
+            for ( var i = 0; i < 6; i++ ) {
+            var x = Math.round( Math.random() * 14 );
+            var y = hexs[x];
+            a += y;
+            }
+            return a;
+        }  
+        var newColor12 = populate2('#');
+        var newColor22 = populate2('#');
+        var angle2 = Math.round( Math.random() * 360 );  
+        var gradient2 = "linear-gradient(" + angle2 + "deg, " + newColor12 + ", " + newColor22 + ")";  
+        $('.carousel').css({'background': '' + gradient2});
     });
 </script>
 
