@@ -2,7 +2,7 @@
 title: "MEMO"
 description: "Everything you need to know about the 'talisman' you will need for exams."
 layout: default
-permalink: /memo/
+permalink: /contents/memo/
 ---
 
 <!-- Memo -->

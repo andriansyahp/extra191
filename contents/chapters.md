@@ -2,5 +2,5 @@
 title: "CHAPTERS AND TOPICS"
 description: "Summarize of chapters and topics that is discussed in Operating System class."
 layout: default
-permalink: /chapters-topics/
+permalink: /contents/chapters-topics/
 ---

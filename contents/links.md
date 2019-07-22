@@ -2,7 +2,7 @@
 title: "EXTERNAL LINKS"
 description: "A handful collection of useful links to various learning materials."
 layout: default
-permalink: /links/
+permalink: /contents/links/
 ---
 
 <!-- External links -->

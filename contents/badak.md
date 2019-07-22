@@ -2,7 +2,7 @@
 title: "BADAK"
 description: "Guides on how to use Badak."
 layout: default
-permalink: /badak/
+permalink: /contents/badak/
 ---
 
 <!-- Badak -->
