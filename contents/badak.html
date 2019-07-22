@@ -9,82 +9,99 @@ permalink: /contents/badak/
 <section class="content-section bg-alternative">
     <div class="container rounded-lg shadow-lg p-4">
         <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0" id="badak">Badak</h3>
-        <h2 class="mb-5 text-white">Guides on how to use <em class = "text-secondary">Badak</em>.</h2>
+            <h3 class="text-secondary mb-0" id="badak">Badak</h3>
+            <h2 class="mb-5 text-white">Guides on how to use <em class = "text-secondary">Badak</em>.</h2>
         </div>      
         <div class="bs-example">
-        <div class="accordion text-white" id="accordionTwo">
-            <div class="card bg-secondary">
-                <div class="card-header text-center" id="headingThree">
-                    <h2 class="mb-0">
-                        <button type="button" class="btn btn-dark text-white" data-toggle="collapse" data-target="#collapseThree">How to access <code class = "text-secondary">Badak</code></button>									
-                    </h2>
+            <div class="accordion text-white" id="accordionTwo">
+                <div class="card bg-secondary">
+                    <div class="card-header text-center" id="headingThree">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-dark text-white" data-toggle="collapse" data-target="#collapseThree">How to access <code class = "text-secondary">Badak</code></button>									
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTwo">
+                        <div class="card-body">
+                            <ul>
+                                <li><p>Tunneling, via <code class = "text-secondary">kawung.cs.ui.ac.id</code>  </p>  
+                                    <p>Since <code class = "text-secondary">Badak</code> (<code class = "text-secondary">badak.cs.ui.ac.id</code>) can only be accessed from internal of Universitas Indonesia, we need to do tunneling (i.e. accessing private network from public network by port forwarding). We can do this by accessing <code class = "text-secondary">Kawung</code> first (<code class = "text-secondary">kawung.cs.ui.ac.id</code>). </p>                            
+                                    <ul>
+                                        <li><p>PuTTY  </p>  
+                                            <p>In order to access <code class = "text-secondary">Kawung</code> and <code class = "text-secondary">Badak</code>, we can use PuTTY that we have prepared from the <strong class = "text-secondary">Prerequisites</strong> part.  </p>  
+                                            <p>For step-by-step walkthrough, you can follow the images below.</p>  
+                                            <ol>
+                                                <li><p>Open the PuTTY program that you have installed in your computer. It will open up a <strong>PuTTY Configuration</strong> as shown in the picture below.  </p>  
+                                                    <img class="img-fluid" src="{{ site.baseurl }}/img/badak-drafts/putty-config.jpeg" alt="'PuTTY Configuration' window.">
+                                                    <p>In the <em class = "text-secondary">Host Name (or IP address)</em> field, input the <code class = "text-secondary">Kawung</code> host name (<code class = "text-secondary">kawung.cs.ui.ac.id</code>), as shown in the red box in the image above. In the <em class = "text-secondary">Port</em> field, leave it as like the default configuration, which is '22' as shown in the green box in the image above. For the <em class = "text-secondary">Connection type:</em> radio button choice, choose 'SSH' as shown in the blue box in the image above. After that, click the <em class = "text-secondary">Open</em> button as shown in the yellow box in the image above.</p>
+                                                </li>  
+                                                <li><p>After that, there will appear another window asking for your credentials (username and password). Enter your username of Universitas Indonesia's SSO account and its password, as shown in the image below.  </p>  
+                                                    <img class="img-fluid" src="{{ site.baseurl }}/img/badak-drafts/putty-kawung-login.png" alt="PuTTY Kawung login.">  
+                                                    <p>If your login is successful, your PuTTY window may looks similar to the one in the image above. </p>
+                                                </li>  
+                                                <li><p>After the Step 2 above, you have entered the <code class = "text-secondary">Kawung</code> server. Next, we will go to <code class = "text-secondary">Badak</code> server.  </p>  
+                                                    <img class="img-fluid" src="{{ site.baseurl }}/img/badak-drafts/putty-badak-login.png" alt="PuTTY Badak login.">
+                                                    <p>Enter <code class = "text-secondary">ssh &lt;username-SSO-account&gt;@badak.cs.ui.ac.id</code> then enter your SSO account's password, just like the one in the image above.  </p>  
+                                                    <p>After successfully done this step, congratulations! You have successfully entered the <code class = "text-secondary">Badak</code> server. </p>
+                                                </li>
+                                            </ol>
+                                        </li>                            
+                                        <li><p>Terminal  </p>  
+                                            <ol>
+                                                <li>
+                                                    <p>Open your Terminal.  </p>
+                                                </li>
+                                                <li>
+                                                    <p>After you opened the Terminal, you can go to <code class = "text-secondary">Kawung</code> by entering <code class = "text-secondary">ssh &lt;username-SSO-account&gt;@kawung.cs.ui.ac.id</code> then enter your SSO account's password, as shown in the image below.  </p>  
+                                                    <img class="img-fluid" src="{{ site.baseurl }}/img/badak-drafts/terminal-kawung-login.png" alt="Terminal Kawung login.">
+                                                <li>
+                                                    <p>After you successfully entered <code class = "text-secondary">Kawung</code>, enter <code class = "text-secondary">ssh &lt;username-SSO-account&gt;@badak.cs.ui.ac.id</code> then enter your SSO account's password, just like the one in the image below.  </p>  
+                                                    <img class="img-fluid" src="{{ site.baseurl }}/img/badak-drafts/terminal-badak-login.png" alt="Terminal Badak login.">
+                                                    <p>After successfully done this step, congratulations! You have successfully entered the <code class = "text-secondary">Badak</code> server.</p>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </li>  
+                                <li><p>Accessing <code class = "text-secondary">Badak</code> while connected to Universitas Indonesia's WiFi  </p>  
+                                    <ul>
+                                        <li>
+                                            <p>PuTTY  </p>  
+                                            <p>Using the Step 1 in PuTTY part in the <strong>Tunneling</strong> part above, instead of <code class = "text-secondary">Kawung</code> host name in the <em class = "text-secondary">Host name</em> field enter <code class = "text-secondary">Badak</code> host name (<code class = "text-secondary">badak.cs.ui.ac.id</code>). After that enter your credentials (username and password) and voila! You have successfully entered <code class = "text-secondary">Badak</code> server. </p>
+                                        </li>  
+                                        <li><p>Terminal  </p>  
+                                            <p>If you are using Terminal, you can do like the way of the Terminal part in the <strong>Tunneling</strong> part above but you can proceed to do the Step 3.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTwo">
-                    <div class="card-body">
-                        <ul>
-                        <li><p>Tunneling, via <code class = "text-secondary">kawung.cs.ui.ac.id</code>  </p>  
-                        <p>Since <code class = "text-secondary">Badak</code> (<code class = "text-secondary">badak.cs.ui.ac.id</code>) can only be accessed from internal of Universitas Indonesia, we need to do tunneling (i.e. accessing private network from public network by port forwarding). We can do this by accessing <code class = "text-secondary">Kawung</code> first (<code class = "text-secondary">kawung.cs.ui.ac.id</code>). </p>
-                        
-                        <ul>
-                        <li><p>PuTTY  </p>  
-                        <p>In order to access <code class = "text-secondary">Kawung</code> and <code class = "text-secondary">Badak</code>, we can use PuTTY that we have prepared from the <strong class = "text-secondary">Prerequisites</strong> part.  </p>  
-                        <p>For step-by-step walkthrough, you can follow the images below.</p>  
-                        <ol>
-                        <li><p>Open the PuTTY program that you have installed in your computer. It will open up a <strong>PuTTY Configuration</strong> as shown in the picture below.  </p>  
-                        <img class="img-fluid" src="/img/badak-drafts/putty-config.jpeg" alt="'PuTTY Configuration' window.">
-                        <p>In the <em class = "text-secondary">Host Name (or IP address)</em> field, input the <code class = "text-secondary">Kawung</code> host name (<code class = "text-secondary">kawung.cs.ui.ac.id</code>), as shown in the red box in the image above. In the <em class = "text-secondary">Port</em> field, leave it as like the default configuration, which is '22' as shown in the green box in the image above. For the <em class = "text-secondary">Connection type:</em> radio button choice, choose 'SSH' as shown in the blue box in the image above. After that, click the <em class = "text-secondary">Open</em> button as shown in the yellow box in the image above.</p></li>  
-                        <li><p>After that, there will appear another window asking for your credentials (username and password). Enter your username of Universitas Indonesia's SSO account and its password, as shown in the image below.  </p>  
-                        <img class="img-fluid" src="/img/badak-drafts/putty-kawung-login.png" alt="PuTTY Kawung login.">  
-                        <p>If your login is successful, your PuTTY window may looks similar to the one in the image above. </p></li>  
-                        <li><p>After the Step 2 above, you have entered the <code class = "text-secondary">Kawung</code> server. Next, we will go to <code class = "text-secondary">Badak</code> server.  </p>  
-                        <img class="img-fluid" src="/img/badak-drafts/putty-badak-login.png" alt="PuTTY Badak login.">
-                        <p>Enter <code class = "text-secondary">ssh &lt;username-SSO-account&gt;@badak.cs.ui.ac.id</code> then enter your SSO account's password, just like the one in the image above.  </p>  
-                        <p>After successfully done this step, congratulations! You have successfully entered the <code class = "text-secondary">Badak</code> server. </p></li></ol></li>
-                        
-                        <li><p>Terminal  </p>  
-                        <ol>
-                        <li><p>Open your Terminal.  </p></li>
-                        <li><p>After you opened the Terminal, you can go to <code class = "text-secondary">Kawung</code> by entering <code class = "text-secondary">ssh &lt;username-SSO-account&gt;@kawung.cs.ui.ac.id</code> then enter your SSO account's password, as shown in the image below.  </p>  
-                        <img class="img-fluid" src="/img/badak-drafts/terminal-kawung-login.png" alt="Terminal Kawung login.">
-                        <li><p>After you successfully entered <code class = "text-secondary">Kawung</code>, enter <code class = "text-secondary">ssh &lt;username-SSO-account&gt;@badak.cs.ui.ac.id</code> then enter your SSO account's password, just like the one in the image below.  </p>  
-                        <img class="img-fluid" src="/img/badak-drafts/terminal-badak-login.png" alt="Terminal Badak login.">
-                        <p>After successfully done this step, congratulations! You have successfully entered the <code class = "text-secondary">Badak</code> server.</p></li></ol></li></ul></li>  
-                        <li><p>Accessing <code class = "text-secondary">Badak</code> while connected to Universitas Indonesia's WiFi  </p>  
-                        <ul>
-                        <li><p>PuTTY  </p>  
-                        <p>Using the Step 1 in PuTTY part in the <strong>Tunneling</strong> part above, instead of <code class = "text-secondary">Kawung</code> host name in the <em class = "text-secondary">Host name</em> field enter <code class = "text-secondary">Badak</code> host name (<code class = "text-secondary">badak.cs.ui.ac.id</code>). After that enter your credentials (username and password) and voila! You have successfully entered <code class = "text-secondary">Badak</code> server. </p></li>  
-                        <li><p>Terminal  </p>  
-                        <p>If you are using Terminal, you can do like the way of the Terminal part in the <strong>Tunneling</strong> part above but you can proceed to do the Step 3.</p></li></ul></li>
-                        </ul>
+                <div class="card bg-secondary text-center">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-dark collapsed text-white" data-toggle="collapse" data-target="#collapseFour">How to copy files in badak.cs.ui.ac.id to Home directory [TODO]</button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionTwo">
+                        <div class="card-body">
+                            <p>[TODO]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-secondary text-center">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-dark collapsed text-white" data-toggle="collapse" data-target="#collapseFive">Common commands to use in badak.cs.ui.ac.id [TODO]</button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionTwo">
+                        <div class="card-body">
+                            <p>[TODO]</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card bg-secondary text-center">
-                <div class="card-header" id="headingFour">
-                    <h2 class="mb-0">
-                        <button type="button" class="btn btn-dark collapsed text-white" data-toggle="collapse" data-target="#collapseFour">How to copy files in badak.cs.ui.ac.id to Home directory [TODO]</button>
-                    </h2>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionTwo">
-                    <div class="card-body">
-                        <p>[TODO]</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card bg-secondary text-center">
-                <div class="card-header" id="headingFive">
-                    <h2 class="mb-0">
-                        <button type="button" class="btn btn-dark collapsed text-white" data-toggle="collapse" data-target="#collapseFive">Common commands to use in badak.cs.ui.ac.id [TODO]</button>
-                    </h2>
-                </div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionTwo">
-                    <div class="card-body">
-                        <p>[TODO]</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
 </section>
