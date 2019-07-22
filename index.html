@@ -8,13 +8,13 @@ layout: default
 
     <div id="carouselContent" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active text-center p-4 masthead">
+            <div class="carousel-item active text-center p-4">
                 <h2 class="mb-1 text-white text-center">EXTRA191</h2>
                 <h3 class="text-center">Welcome.</h3>
             </div>
             {% for page in site.pages %}
                 {% if page.categories contains 'content' %}
-                    <div class="carousel-item text-center p-4 masthead">
+                    <div class="carousel-item text-center p-4">
                         <h2 class="mb-1 text-white text-center">{{page.title}}</h2>
                         <h3 class="text-center">{{page.description}}</h3>
                     </div>
