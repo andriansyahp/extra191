@@ -1,12 +1,12 @@
-<!-- ---
+---
 title: "EXTERNAL LINKS"
 description: "A handful collection of useful links to various learning materials."
 layout: default
 permalink: /links/
---- -->
+---
 
 <!-- External links -->
-<!-- <section class="content-section bg-alternative">
+<section class="content-section bg-alternative">
     <div class="container rounded-lg shadow-lg p-4">
         <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-0" id="links">External Links</h3>
@@ -81,4 +81,4 @@ permalink: /links/
         </div>
         </div>
     </div>
-</section> -->
+</section>

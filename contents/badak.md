@@ -1,12 +1,12 @@
-<!-- ---
+---
 title: "BADAK"
 description: "Guides on how to use Badak."
 layout: default
 permalink: /badak/
---- -->
+---
 
 <!-- Badak -->
-<!-- <section class="content-section bg-alternative">
+<section class="content-section bg-alternative">
     <div class="container rounded-lg shadow-lg p-4">
         <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-0" id="badak">Badak</h3>
@@ -87,4 +87,4 @@ permalink: /badak/
         </div>
         </div>
     </div>
-</section> -->
+</section>

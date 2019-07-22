@@ -1,12 +1,12 @@
-<!-- ---
+---
 title: "MEMO"
 description: "Everything you need to know about the 'talisman' you will need for exams."
 layout: default
 permalink: /memo/
---- -->
+---
 
 <!-- Memo -->
-<!-- <section class="content-section bg-alternative text-white text-center">
+<section class="content-section bg-alternative text-white text-center">
     <div class="container rounded-lg shadow-lg p-4">
         <div class="content-section-heading">
         <h3 class="text-secondary mb-0" id="memo">Memo</h3>
@@ -88,4 +88,4 @@ permalink: /memo/
             </div>
         </div>
     </div>
-</section> -->
+</section>
