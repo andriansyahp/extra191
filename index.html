@@ -45,18 +45,14 @@ layout: default
 <div id="carouselContent" class="carousel slide" data-interval="false" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active text-center">
-            <div class="carousel-caption">
-                <h3>EXTRA191</h3>
-                <p>Welcome.</p>
-            </div>
+            <h3>EXTRA191</h3>
+            <p>Welcome.</p>
         </div>
         {% for page in site.pages %}
             {% if page.categories contains 'content' %}
                 <div class="carousel-item text-center p-4">
-                    <div class="carousel-caption">
-                        <h3>{{page.title}}</h3>
-                        <p>{{page.description}}</p>
-                    </div>
+                    <h3>{{page.title}}</h3>
+                    <p>{{page.description}}</p>
                 </div>
             {% endif %}
         {% endfor %}
