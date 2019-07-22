@@ -6,8 +6,10 @@ layout: default
 
 <!-- <h1 class="mb-1 text-white text-center">Test. Hello World!</h1> -->
 {% for page in site.pages %}
+  {% if page.categories contains 'content' %}
     <div class="item">
       <h3>{{page.title}}</h3>
       <p>{{page.description}}</p>  
     </div>
+  {% endif %}
 {% endfor %}
