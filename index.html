@@ -6,17 +6,17 @@ layout: default
 <div class="container text-center rounded-lg shadow-lg p-4">
     <h1 class="mb-1 text-white text-center">Apa yang ada di <em>Website</em> ini <em>?</em></h1>
 
-    <div id="carouselContent" class="carousel slide" data-ride="carousel">
+    <div id="carouselContent" class="carousel slide" data-interval="2500" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active text-center p-4">
-                <h2 class="mb-1 text-white text-center">EXTRA191</h2>
-                <h3 class="text-center">Welcome.</h3>
+                <h2 class="mb-1 text-primary text-center">EXTRA191</h2>
+                <h3 class="text-center text-secondary">Welcome.</h3>
             </div>
             {% for page in site.pages %}
                 {% if page.categories contains 'content' %}
                     <div class="carousel-item text-center p-4">
-                        <h2 class="mb-1 text-white text-center">{{page.title}}</h2>
-                        <h3 class="text-center">{{page.description}}</h3>
+                        <h2 class="mb-1 text-primary text-center">{{page.title}}</h2>
+                        <h3 class="text-center text-secondary">{{page.description}}</h3>
                     </div>
                 {% endif %}
             {% endfor %}
@@ -47,7 +47,7 @@ layout: default
     var newColor2 = populate('#');
     var angle = Math.round( Math.random() * 360 );  
     var gradient = "linear-gradient(" + angle + "deg, " + newColor1 + ", " + newColor2 + ")";  
-    $('.carousel-item').css({'background': '' + gradient});
+    $('.carousel-inner').css({'background': '' + gradient});
     });
 </script>
 
