@@ -5,11 +5,39 @@ layout: default
 ---
 
 <!-- <h1 class="mb-1 text-white text-center">Test. Hello World!</h1> -->
-{% for page in site.pages %}
+<!-- {% for page in site.pages %}
   {% if page.categories contains 'content' %}
     <div class="item">
       <h3>{{page.title}}</h3>
       <p>{{page.description}}</p>  
     </div>
   {% endif %}
-{% endfor %}
+{% endfor %} -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="carousel-caption">
+                <h3>EXTRA191</h3>
+                <p>Welcome.</p>
+            </div>
+        </div>
+        {% for page in site.pages %}
+            {% if page.categories contains 'content' %}
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <h3>{{page.title}}</h3>
+                        <p>{{page.description}}</p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
