@@ -422,6 +422,6 @@ a:hover, a:focus, a:active {
   padding-right: 8px;
 }
 .carousel .item {
-  height: 1000px;
+  min-height: 500px !important;
 }
 
