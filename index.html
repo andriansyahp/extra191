@@ -35,7 +35,7 @@ layout: default
     </div>         -->
     {% for page in site.pages %}
         {% if page.categories contains 'content' %}
-            <div class="text-center p-5">
+            <div class="text-center p-3">
                 <h5 class="text-primary text-center">{{page.title}}</h5>
                 <h6 class="text-center text-secondary">{{page.description}}</h6>
                 <a class="btn btn-outline-primary btn-sm" href = "{{ page.path }}" role="button">Lihat</a>
